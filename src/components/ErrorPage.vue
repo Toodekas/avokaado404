@@ -6,13 +6,16 @@
             </div>
             <h1>Page not <u>found?</u></h1>
             <p>
-            Seems like something is missing from avokaado.<br>
-            We cannot find what you are looking for.
+                Seems like something is missing from avokaado.<br>
+                We cannot find what you are looking for.
             </p>
-            <h3>Installed CLI Plugins</h3>
-            <ul>
-                <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-                <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+            <ul class="btns">
+                <li>
+                    <div class="back-btn">
+                        <a @click="history.back()" type="button" class="btn btn-primary btn-radius" >Previous page</a>
+                    </div>
+                </li>
+                <li><a href="https://avokaado.io/" class="btn btn-secondary btn-radius">Go home</a></li>
             </ul>
         </div>
     </div>
@@ -27,11 +30,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -40,10 +39,29 @@ li {
   display: inline-flex;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
+
+p {
+    font-size: 1.125rem;
+    line-height:1.875rem;
+    letter-spacing: 0.027rem;
+    color:#647278;
+}
+u {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #2EBD59; /* safari still uses vendor prefix */
+    text-decoration-color: #2EBD59;
+    bottom: -0.4rem;
+    text-underline-offset: 0.4rem;
+}
+
+.error {
+    z-index: 2;
+    display:flex;
+    flex-direction: column;
+    position: relative;
 }
 .error::before {
+    z-index: 1;
     display: block;
     content: "";
     position: absolute;
@@ -53,10 +71,8 @@ a {
     width: 30rem;
     height: 48rem;
 }
-.content {
-    
-}
 .error::after {
+    z-index: 1;
     display: block;
     content: "";
     position: absolute;
@@ -65,5 +81,52 @@ a {
     background: url('../assets/background-avokaado-right.svg') right top no-repeat ;
     width: 30rem;
     height: 48rem;
+}
+.content {
+    margin-top: 6rem;
+}
+.btn {
+    border-color: #2EBD59;
+    padding-left:2.25rem;
+    padding-right:2.25rem;
+    width:12rem;
+}
+.btn-primary {
+    background-color:#2EBD59;
+}
+.btn-primary:hover {
+    background-color:#1d7437;
+    border-color: #1d7437;
+}
+.btn-secondary {
+    background-color: #ffffff;
+    color:#000000;
+}
+.btn-secondary:hover {
+    background-color: #2EBD59;
+    color:#ffffff;
+    border-color: #2EBD59;
+}
+
+.btn-radius {
+    border-radius: 2.6rem;
+}
+
+.btns{
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1100px){
+    .error::before{
+        background: none;
+    }
+    .error::after{
+        background: none;
+    }
+}
+@media only screen and (max-width: 420px){
+    .btn-secondary {
+        margin-top:0.8rem;
+    }
 }
 </style>
