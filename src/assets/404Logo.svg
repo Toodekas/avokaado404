@@ -1,0 +1,16 @@
+<svg width="420" height="302" viewBox="0 0 420 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M210 0C159.618 0 134 109.062 134 150.666C134 192.271 168.027 226 210 226C251.973 226 286 192.271 286 150.666C286 109.062 260.38 0 210 0Z" fill="#2EBD59"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M210 12C164.922 12 142 109.48 142 146.666C142 183.853 172.446 214 210 214C247.554 214 278 183.853 278 146.666C278 109.48 255.077 12 210 12Z" fill="#96DEAC"/>
+<circle cx="210" cy="149" r="55" fill="white"/>
+<path d="M6.2 188.2H74.6V226H94V188.2H113.2V171.4H94V84.8H71.4L6.2 175.8V188.2ZM28 171.4V171L68 117.6C71.8 112.6 75 106 75 106H75.4C75.4 106 74.6 113.4 74.6 120V171.4H28Z" fill="#2EBD59"/>
+<path d="M304.2 188.2H372.6V226H392V188.2H411.2V171.4H392V84.8H369.4L304.2 175.8V188.2ZM326 171.4V171L366 117.6C369.8 112.6 373 106 373 106H373.4C373.4 106 372.6 113.4 372.6 120V171.4H326Z" fill="#2EBD59"/>
+<circle cx="165" cy="231" r="55" fill="#233238"/>
+<circle opacity="0.4" cx="153" cy="208" r="20" fill="white"/>
+<ellipse cx="165" cy="297" rx="50" ry="5" fill="url(#paint0_radial_3046_350)"/>
+<defs>
+<radialGradient id="paint0_radial_3046_350" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(165 297) rotate(180) scale(46.2963 5439.08)">
+<stop stop-color="#949DA1"/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+</defs>
+</svg>

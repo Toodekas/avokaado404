@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ErrorPage/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ErrorPage from './components/ErrorPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ErrorPage
   }
 }
 </script>
