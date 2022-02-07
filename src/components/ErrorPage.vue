@@ -31,13 +31,20 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+    font-weight:600;
+    margin-bottom:1.5rem;
+    font-size:2.875rem;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
 }
 li {
   display: inline-flex;
-  margin: 0 10px;
+  margin: 0 0.625rem;
+  z-index:100;
 }
 
 p {
@@ -45,18 +52,25 @@ p {
     line-height:1.875rem;
     letter-spacing: 0.027rem;
     color:#647278;
+    margin-bottom: 2rem;
 }
 u {
     text-decoration: underline;
     -webkit-text-decoration-color: #2EBD59; /* safari still uses vendor prefix */
     text-decoration-color: #2EBD59;
     bottom: -0.4rem;
-    text-underline-offset: 0.4rem;
+    text-underline-offset: 0.6rem;
 }
 
+a{
+    font-weight:600;
+}
+.logo404 {
+    margin-bottom:3rem;
+}
 .error {
     z-index: 2;
-    display:flex;
+    display: flex;
     flex-direction: column;
     position: relative;
 }
@@ -67,7 +81,7 @@ u {
     position: absolute;
     top: 0;
     left: 0;
-    background: url('../assets/background-avokados-left.svg') left top no-repeat ;
+    background: url('../assets/avocados-left.svg') left top no-repeat ;
     width: 30rem;
     height: 48rem;
 }
@@ -78,7 +92,7 @@ u {
     position: absolute;
     top: 0;
     right: 0;
-    background: url('../assets/background-avokaado-right.svg') right top no-repeat ;
+    background: url('../assets/avocados-right.svg') right top no-repeat ;
     width: 30rem;
     height: 48rem;
 }
@@ -118,15 +132,18 @@ u {
 
 @media only screen and (max-width: 1100px){
     .error::before{
-        background: none;
+        display: none;
     }
     .error::after{
-        background: none;
+        display: none;
     }
 }
 @media only screen and (max-width: 420px){
     .btn-secondary {
         margin-top:0.8rem;
+    }
+    .logo404 img{
+        width: 100%;
     }
 }
 </style>
